@@ -46,29 +46,102 @@
       <div class="container">
         <div class=" align-items-center">
           <section id="menu" class="menu section-bg">
+
             <div class="container" data-aos="fade-up">
               <div class="section-title">
                 <h2>Menu</h2>
               </div>
-              <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="menu-flters">
-                    <li data-filter=".filter-coffee ">coffee</li>
-                    <li data-filter=".filter-smoothy">smoothy</li>
-                    <li data-filter=".filter-shake">shake</li>
-                    <li data-filter=".filter-freak-shake">freak - shake</li>
-                    <li data-filter=".filter-shots">shots</li>
-                    <li data-filter=".filter-french-fries">french - fries</li>
-                    <li data-filter=".filter-sandwich">starter</li>
-                    <li data-filter=".filter-sandwich">soup</li>
-                    <li data-filter=".filter-sandwich">burger</li>
-                    <li data-filter=".filter-sandwich">chinise</li>
-                    <li data-filter=".filter-sandwich">sandwich</li>
-                  </ul>
+              <div class="changing-menu">
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                      <li class="click-bev">beverages</li>
+                      <li class="click-snak">snakes</li>
+                      <li data-filter=".filter-shake">Pizza</li>
+                      <li data-filter=".filter-freak-shake">Breads</li>
+                      <li data-filter=".filter-shots">Our specials</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+
               <!-- start coffee menu -->
-              <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="show_menu">
+
+
+              </div>
+          </section>
+
+
+
+
+        </div>
+
+
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>the Crown cafe</h3>
+              <p>
+                Ground floor, Madhav Orchid Odhav,<br>
+                Sardar Patel Ring Rd, Ahmedabad, Gujarat 382418<br>
+                <strong>Phone:</strong> +91 00000000<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#Home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#About us">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#Services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#book table">book table</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#inquiry">inquiry</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#Terms of service">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // beverages
+    $('.click-bev').click(function () {
+      $('.changing-menu').html(`<div class="changing-menu">
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                      <li  class="coffee-filter">coffee</li>
+                      <li class="smoothy-filter">smoothy</li>
+                      <li class="shake-filter">shake</li>
+                      <li class="freak-shake-filter">freak-shake</li>
+                      <li class="shots-filter">Shots</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>`)
+      // coffee menu
+      $('.coffee-filter').click(function () {
+        $('.show_menu').html(` <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-lg-6 menu-item filter-coffee">
                   
                   <div class="menu-content filter-coffee">
@@ -105,10 +178,12 @@
                     <a href="#">caramal cold coffee</a><span>&#8377; 149</span>
                   </div>
                 </div>
-                <!-- end coffee menu -->
+                </div>`)
 
-                <!-- start smoothy menu -->
-                <div class="col-lg-6 menu-item filter-smoothy">
+      });
+      // smoothy menu
+      $('.smoothy-filter').click(function () {
+        $('.show_menu').html(`                  <div class="col-lg-6 menu-item filter-smoothy">
                   
                   <div class="menu-content">
                     <a href="#">fruit nutle</a><span>&#8377; 149</span>
@@ -143,11 +218,12 @@
                   <div class="menu-content">
                     <a href="#">T.C.C Specials</a><span>&#8377; 149</span>
                   </div>
-                </div>
-                <!-- end smooty menu -->
+                </div>`)
+      });
 
-                <!-- start shake menu -->
-                <div class="col-lg-6 menu-item filter-shake">
+      // shake menu
+      $('.shake-filter').click(function () {
+        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-shake">
                   
                   <div class="menu-content">
                     <a href="#">chocalate hazelnut</a><span>&#8377; 169</span>
@@ -208,15 +284,13 @@
                   </div>
                 </div>
                 <div class="col-lg-6 menu-item filter-shake">
-                  
                   <div class="menu-content">
                     <a href="#">lover</a><span>&#8377; 169</span>
-                  </div>
-                </div>
-                <!-- end shake menu -->
-
-                <!-- start filter-shake menu -->
-                <div class="col-lg-6 menu-item filter-freak-shake">
+                </div>`)
+      });
+      // freek shake
+      $('.freak-shake-filter').click(function () {
+        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-freak-shake">
                   
                   <div class="menu-content">
                     <a href="#">chocalate</a><span>&#8377; 149</span>
@@ -240,9 +314,10 @@
                   <div class="menu-content">
                     <a href="#">monster</a><span>&#8377; 149</span>
                   </div>
-                </div>
-                <!-- end filter-shake menu -->
-                <div class="col-lg-6 menu-item filter-shots">
+                </div>`)
+      });
+      $('.shots-filter').click(function () {
+        $('.show_menu').html(`               <div class="col-lg-6 menu-item filter-shots">
                   
                   <div class="menu-content">
                     <a href="#">lichi currant berry</a><span>&#8377; 149</span>
@@ -265,11 +340,28 @@
                   <div class="menu-content">
                     <a href="#">lichi kama kaji</a><span>&#8377; 149</span>
                   </div>
-                </div>
-                 <!-- start shots menu -->
+                </div>`)
+      });
 
-                 <!-- start french-fries menu -->
-                 <div class="col-lg-6 menu-item filter-french-fries">
+
+    });
+    /// snakes
+    $('.click-snak').click(function () {
+      $('.changing-menu').html(`                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                      <li class="Sandwich-filter">Sandwich</li>
+                      <li class="Burger-filter">Burger</li>
+                      <li class="Megi-filter">Megi</li>
+                      <li class="french-filter">French-Fries</li>
+                      <li class="Nachos-filter">Nachos</li>
+                    </ul>
+                  </div>
+                </div>`)
+
+      // french-fries
+      $('.french-filter').click(function () {
+        $('.show_menu').html(`             <div class="col-lg-6 menu-item filter-french-fries">
                   
                   <div class="menu-content">
                     <a href="#">classic</a><span>&#8377; 149</span>
@@ -278,6 +370,12 @@
                 <div class="col-lg-6 menu-item filter-french-fries">
                   
                   <div class="menu-content">
+                    <a href="#">classic</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 menu-item filter-french-fries">
+                <div class="menu-content">
                     <a href="#">barbecue</a><span>&#8377; 149</span>
                   </div>
                 </div>
@@ -304,11 +402,11 @@
                   <div class="menu-content">
                     <a href="#">cheese</a><span>&#8377; 149</span>
                   </div>
-                </div>
-                 <!-- end french-fries menu -->
+                </div>`)
+      });
 
-                 <!-- start sandwich menu -->
-                 <div class="col-lg-6 menu-item filter-sandwich">
+      $('.Sandwich-filter').click(function () {
+        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-sandwich">
                   
                   <div class="menu-content">
                     <a href="#">veg sandwich</a><span>&#8377; 149</span>
@@ -385,97 +483,13 @@
                   <div class="menu-content">
                     <a href="#">clube</a><span>&#8377; 149</span>
                   </div>
-                </div>
-                <!-- end  sandwich menu -->
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-  </main>
+                </div>`)
+      });
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>the Crown cafe</h3>
-              <p>
-                Ground floor, Madhav Orchid Odhav,<br>
-                Sardar Patel Ring Rd, Ahmedabad, Gujarat 382418<br>
-                <strong>Phone:</strong> +91 00000000<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 footer-links">
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#About us">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#book table">book table</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#inquiry">inquiry</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Terms of service">Terms of service</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+    });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    // $('.responsive').slick({
-    // dots: true,
-    // infinite: false,
-    // speed: 300,
-    // slidesToShow: 2,
-    // slidesToScroll: 2,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-    $('.single-item').slick();
-
-  </script>
 </body>
 
 </html>
