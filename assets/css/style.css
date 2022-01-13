@@ -707,13 +707,15 @@ section {
 
 .events .events-carousel {
   background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
+  padding: 20px;
 }
 
 .events .event-item {
   color: #fff;
 }
-
+.event-item img{
+  width: 70%;
+}
 .events .event-item h3 {
   font-weight: 600;
   font-size: 26px;
@@ -1240,9 +1242,10 @@ section {
   font-size: 13px;
   color: #fff;
 }
-
-/* this is menu silder  */
-/* 
-.mySlides{
-  display: none;
-} */
+.map iframe{
+  height: 100%;
+}
+::selection{
+  background: #ddbe89;
+  color: black;
+}

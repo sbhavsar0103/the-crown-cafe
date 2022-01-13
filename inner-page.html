@@ -37,7 +37,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
     </div>
   </header><!-- End Header -->
 
@@ -53,31 +52,23 @@
               </div>
               <div class="changing-menu">
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-12 d-flex justify-content-center">
+                  <div class="col-lg-12 d-flex justify-content-center text-capitalize">
                     <ul id="menu-flters">
                       <li class="click-bev">beverages</li>
                       <li class="click-snak">snakes</li>
-                      <li data-filter=".filter-shake">Pizza</li>
-                      <li data-filter=".filter-freak-shake">Breads</li>
-                      <li data-filter=".filter-shots">Our specials</li>
+                      <li class="click-starter">starter</li>
+                      <!-- <li data-filter=".filter-shots">Our specials</li> -->
+                      <li class="click-meals">meal's</li>
                     </ul>
                   </div>
                 </div>
               </div>
-
               <!-- start coffee menu -->
               <div class="show_menu">
 
-
               </div>
           </section>
-
-
-
-
         </div>
-
-
     </section>
   </main>
 
@@ -126,7 +117,7 @@
   <script>
     // beverages
     $('.click-bev').click(function () {
-      $('.changing-menu').html(`<div class="changing-menu">
+      $('.changing-menu').html(`<div class="changing-menu text-capitalize">
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
                   <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="menu-flters">
@@ -135,6 +126,7 @@
                       <li class="shake-filter">shake</li>
                       <li class="freak-shake-filter">freak-shake</li>
                       <li class="shots-filter">Shots</li>
+                      <li class="mocktail-filter">mocktail</li>
                     </ul>
                   </div>
                 </div>
@@ -183,14 +175,14 @@
       });
       // smoothy menu
       $('.smoothy-filter').click(function () {
-        $('.show_menu').html(`                  <div class="col-lg-6 menu-item filter-smoothy">
-                  
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-smoothy ">  
                   <div class="menu-content">
                     <a href="#">fruit nutle</a><span>&#8377; 149</span>
                   </div>
                 </div>
                 <div class="col-lg-6 menu-item filter-smoothy">
-                  
+
                   <div class="menu-content">
                     <a href="#">chocalate</a><span>&#8377; 149</span>
                   </div>
@@ -223,7 +215,8 @@
 
       // shake menu
       $('.shake-filter').click(function () {
-        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-shake">
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 menu-item filter-shake">
                   
                   <div class="menu-content">
                     <a href="#">chocalate hazelnut</a><span>&#8377; 169</span>
@@ -290,7 +283,8 @@
       });
       // freek shake
       $('.freak-shake-filter').click(function () {
-        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-freak-shake">
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 menu-item filter-freak-shake">
                   
                   <div class="menu-content">
                     <a href="#">chocalate</a><span>&#8377; 149</span>
@@ -317,7 +311,8 @@
                 </div>`)
       });
       $('.shots-filter').click(function () {
-        $('.show_menu').html(`               <div class="col-lg-6 menu-item filter-shots">
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 menu-item filter-shots">
                   
                   <div class="menu-content">
                     <a href="#">lichi currant berry</a><span>&#8377; 149</span>
@@ -342,26 +337,113 @@
                   </div>
                 </div>`)
       });
+      $('.mocktail-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">king fisher</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">classic mint</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">pineapple </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">coolberg</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">strawberry mint</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">black currant</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">blue berry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">lemon mint</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">monster</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">blue curacao</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">red bull</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">strawberry margarita</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">kiwi margarita</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">lichi margarita</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">lichi freak</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">one more time</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
 
     });
     /// snakes
     $('.click-snak').click(function () {
-      $('.changing-menu').html(`                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-12 d-flex justify-content-center">
+      $('.changing-menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200" >
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-lg-12 d-flex justify-content-center text-capitalize">
                     <ul id="menu-flters">
                       <li class="Sandwich-filter">Sandwich</li>
                       <li class="Burger-filter">Burger</li>
-                      <li class="Megi-filter">Megi</li>
+                      <li class="Meggi-filter">Meggi</li>
                       <li class="french-filter">French-Fries</li>
                       <li class="Nachos-filter">Nachos</li>
+                      <li class="tacos-filter">Tacos</li>
+                      <li class="momos-filter">momo's</li>
                     </ul>
                   </div>
                 </div>`)
 
       // french-fries
       $('.french-filter').click(function () {
-        $('.show_menu').html(`             <div class="col-lg-6 menu-item filter-french-fries">
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 menu-item filter-french-fries">
                   
                   <div class="menu-content">
                     <a href="#">classic</a><span>&#8377; 149</span>
@@ -406,7 +488,8 @@
       });
 
       $('.Sandwich-filter').click(function () {
-        $('.show_menu').html(`                <div class="col-lg-6 menu-item filter-sandwich">
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 menu-item filter-sandwich">
                   
                   <div class="menu-content">
                     <a href="#">veg sandwich</a><span>&#8377; 149</span>
@@ -485,7 +568,638 @@
                   </div>
                 </div>`)
       });
+      $('.Nachos-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">spenish corn</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                  <div class="menu-content">
+                    <a href="#">cheese Nachos</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                  <div class="menu-content">
+                    <a href="#">italian Nachoss</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                  <div class="menu-content">
+                    <a href="#">supreme Nachos</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                  <div class="menu-content">
+                    <a href="#">creamy Nachos</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                  <div class="menu-content">
+                    <a href="#">T.C.C specials</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.Burger-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">aloo tiki</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg Burger</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg classic</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg cheese</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tanduri paneer</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">crispee paneer</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+
+      $('.tacos-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican wave</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">spinich corn</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">italian </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C specials </a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+
+      $('.Meggi-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">masala </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg Meggi</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tadka meggi</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese meggi</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican meggi</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C specials</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.momos-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg momo's</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer momo's</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg cheese</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C specials</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+
+    });
+
+    // starter
+    $('.click-starter').click(function () {
+      $('.changing-menu').html(`<div class="changing-menu text-capitalize">
+              <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="menu-flters">
+                    <li  class="sp-starter">sp.starter</li>
+                    <li  class="soup-filter">soup</li>
+                    <li class="chinise-filter">chinise</li>
+                    <li class="risoto-filter">risoto</li>
+                    <li class="wrape-roll-filter">wrape & roll</li>
+                    <li class="tandoor-starter-filter">tandoor starter</li>
+                  </ul>
+                </div>
+              </div>
+            </div>`)
+
+      $('.soup-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">hot & sour</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">manchow</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tomato</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">broccoli almond</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican tex-mex</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.chinise-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200" >
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg fried rice</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">manchurian </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">hakka noodles</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">schezwan fried rice</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">schezwan noodles</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">machurian noodles</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer machurian</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">singapuri rice</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">chineess bhel</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.risoto-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">corn broccoli</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">broccoli mashroom</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">saffron</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.wrape-roll-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican paneer salsa roll</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">dragan roll</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican roll</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tanduri aloo cheese tika roll</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C specials platter</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.sp-starter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">garlic braed</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese chili toast</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">italian bruschetta</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">totamo mozzarella</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">exotic bruschetta</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese quket</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">corn cheese cottage bruschetta</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">corn cheese balls</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer scalight</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer titbits</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese fondue</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#"> cottage cheese babay stick</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+
+      $('.tandoor-starter-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese chili seek kabab</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer tikka dry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">peri peri paneer tikka dry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer gulraja tikka</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tandoor platter</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+    });
+    $('.click-meals').click(function () {
+      $('.changing-menu').html(`<div class="changing-menu text-capitalize">
+                      <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                          <ul id="menu-flters">
+                            <li  class="rice-dal-filter">rice & dal</li>
+                            <li  class="baked-dish-filter">baked dish</li>
+                            <li  class="sizzler-filter">sizzler</li>
+                            <li class="indina-filter">indina</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>`)
+      $('.rice-dal-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">jeera rice</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg pulav</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">dal fry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">dal tadka</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">hydrabadi biriyani</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">dum biriyani</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg biriyani</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+      });
+      $('.baked-dish-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mexican enchiladas</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg AU gratin</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">bake macroni with pineapple</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">spanish cannelloni </a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">lasagna</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+              });
+              $('.sizzler-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">fifty-fifty</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">chinise expo</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg exotic</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">corn cheese cutlet</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer shashlik sizzler</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C specials</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+              });
+              $('.indina-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg mix</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg makhan</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg kadai</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg handi</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">panner pyaza</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer hariyali</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">veg chili milli</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer makhani</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer butter masala</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer lavabdar</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer khurchan</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mashroom masala</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer tikka masala</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">kofta shaam-savera</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">nargisi kofta</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer cheese butter masala</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">paneer peshwari</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">cheese angoori</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">kaju masala</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">kaju curry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">kaju curry</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">roti(butter,plain)</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">lachha paratha</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">naan</a><span>&#8377; 149</span>
+                  </div>
+                </div>`)
+                
+              }); 
     });
   </script>
   <!-- Template Main JS File -->
