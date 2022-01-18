@@ -430,6 +430,20 @@
         </div>
         <div class="col-lg-8 mt-5 mt-lg-0">
           <form method="post" role="form" class="email-form">
+            <div class="form-group mt-3">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="star-rating">
+                    <span class="bi bi-star" data-rating="1"></span>
+                    <span class="bi bi-star" data-rating="2"></span>
+                    <span class="bi bi-star" data-rating="3"></span>
+                    <span class="bi bi-star" data-rating="4"></span>
+                    <span class="bi bi-star" data-rating="5"></span>
+                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -438,9 +452,7 @@
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
             </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
+
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
             </div>
@@ -498,7 +510,31 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <script>
+    var $star_rating = $('.star-rating .bi');
 
+var SetRatingStar = function() {
+  return $star_rating.each(function() {
+    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+      return $(this).removeClass('bi bi-star').addClass('bi bi-star-fill');
+    } else {
+      return $(this).removeClass('bi bi-star-fill').addClass('bi bi-star');
+    }
+  });
+};
+
+$star_rating.on('click', function() {
+  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+  return SetRatingStar();
+});
+
+SetRatingStar();
+$(document).ready(function() {
+
+});
+  </script>
+  
 </body>
 
 </html>

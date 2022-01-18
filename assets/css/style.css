@@ -1282,3 +1282,11 @@ section {
     content: "...................................................................................................................";
   }
 }
+
+/* star rating css */
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .bi-star{color: yellow;}
