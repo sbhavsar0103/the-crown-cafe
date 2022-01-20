@@ -1124,12 +1124,13 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 26px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
   color: #fff;
   padding: 0 0 20px;
+  letter-spacing: 0.1rem;
 }
 
 #footer .footer-top .social-links a {
@@ -1272,6 +1273,13 @@ section {
   }
   .navbar-mobile ul{
     height: 50%;
+  }
+  #footer .footer-top .footer-info{
+    text-align: center;
+  }
+  #footer .footer-top .footer-links ul li{
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 1200px){
