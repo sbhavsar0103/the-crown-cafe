@@ -145,11 +145,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   transition: 0.3s;
   background-color: rgba(221, 190, 137,.6);
+  height: 50%;
 }
 
 .navbar-mobile a {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 21px;
   color: #1a1814;
 }
 
@@ -708,6 +709,7 @@ section {
 
 .events .event-item {
   color: #fff;
+  padding: 10px;
 }
 .event-item img{
   width: 70%;
@@ -1281,6 +1283,15 @@ section {
   .menu .menu-content::after{
     content: "...................................................................................................................";
   }
+  .event-item img{
+    width: 100%;
+  }
+}
+@media (max-width: 368px){
+  #hero .btn-book{
+    margin-left: 4px;
+    margin-top: 14px;
+  }
 }
 
 /* star rating css */
@@ -1289,4 +1300,6 @@ section {
   font-size:1.25em;
 }
 
-.star-rating .bi-star{color: yellow;}
+.star-rating .bi-star{color: yellow;} 
+
+
