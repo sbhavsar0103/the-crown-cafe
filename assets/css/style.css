@@ -409,7 +409,7 @@ section {
   line-height: 8px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+ 
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -1281,6 +1281,9 @@ section {
     display: flex;
     justify-content: center;
   }
+  .section-title h2{
+    font-size: 8px;
+  }
 }
 @media (max-width: 1200px){
   .menu .menu-content::after{
@@ -1301,7 +1304,13 @@ section {
     margin-top: 14px;
   }
 }
+@media (max-width: 280px){
 
+  .testimonials .testimonial-item p{
+    margin: 0;
+    padding: 20px 48px 20px 24px;
+  }
+}
 /* star rating css */
 .star-rating {
   line-height:32px;
