@@ -44,7 +44,6 @@
       <div class="container">
         <div class=" align-items-center">
           <section id="menu" class="menu section-bg">
-
             <div class="container" data-aos="fade-up">
               <div class="section-title">
                 <h2>Menu</h2>
@@ -56,13 +55,12 @@
                       <li class="click-bev">beverages</li>
                       <li class="click-snak">snakes</li>
                       <li class="click-starter">starter</li>
-                      <!-- <li data-filter=".filter-shots">Our specials</li> -->
                       <li class="click-meals">meal's</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <!-- start coffee menu -->
+              <!-- start show menu -->
               <div class="show_menu">
 
               </div>
@@ -82,22 +80,17 @@
               <p>
                 Ground floor, Madhav Orchid Odhav,<br>
                 Sardar Patel Ring Rd, Ahmedabad, Gujarat 382418<br>
-                <strong>Phone:</strong> +91 00000000<br>
+                <strong>Phone:</strong> +91 88662 91624<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 footer-links">
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#About us">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#book table">book table</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#inquiry">inquiry</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Terms of service">Terms of service</a></li>
-            </ul>
+          <div class="map col-lg-7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.1636830913453!2d72.66832351444211!3d23.017761522285085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8707d40aad2b%3A0xfe38f0de03490e84!2sThe%20Crown%20Cafe%20-%20Bistro!5e0!3m2!1sen!2sin!4v1642078560558!5m2!1sen!2sin"
+              width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -1036,7 +1029,9 @@
                             <li  class="rice-dal-filter">rice & dal</li>
                             <li  class="baked-dish-filter">baked dish</li>
                             <li  class="sizzler-filter">sizzler</li>
-                            <li class="indina-filter">indina</li>
+                            <li  class="pizza-filter">pizza</li>
+                            <li  class="pasta-filter">pasta</li>
+                            <li  class="indina-filter">indina</li>
                           </ul>
                         </div>
                       </div>
@@ -1311,6 +1306,91 @@
                 </div>`)
 
       });
+      $('.pizza-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">margherita</a><span>&#8377; 149</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">italiano</a><span>&#8377; 169</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">maxican green wave  </a><span>&#8377; 189</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">peppy paneer</a><span>&#8377; 209</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">tadoori paneer</a><span>&#8377; 209</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">nepoli pizza</a><span>&#8377; 279</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">mushroom cheesy</a><span>&#8377; 279</span>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">T.C.C special</a><span>&#8377; 299</span>
+                  </div>
+                </div>`)
+              });
+
+              $('.pasta-filter').click(function () {
+        $('.show_menu').html(`<div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">arrabiata pasta</a><span>&#8377; 199</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">alfredo pasta</a><span>&#8377; 199</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">pomodoro pasta</a><span>&#8377; 199</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">four cheese sauce pasta</a><span>&#8377; 199</span>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                    <a href="#">fusilli pasta</a><span>&#8377; 199</span>
+                  </div>
+                </div>`)
+              });
     });
   </script>
   <!-- Template Main JS File -->
